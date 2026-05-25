@@ -208,3 +208,59 @@ body {
   color: white;
   font-weight: 600;
 }
+
+/* Responsive overrides */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--sidebar-border);
+    padding: 1.5rem 1.25rem;
+    gap: 1.5rem;
+  }
+
+  .logo-container {
+    width: 100%;
+    align-items: center;
+  }
+
+  .logo-text {
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .main-content {
+    padding: 2rem 1.25rem;
+    max-width: 100%;
+    overflow: visible;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    margin-bottom: 1.5rem;
+  }
+
+  .question-header {
+    padding: 1rem 1.25rem;
+  }
+
+  .answer-body {
+    padding: 0 1.25rem 1.25rem;
+    padding-top: 1.25rem;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
